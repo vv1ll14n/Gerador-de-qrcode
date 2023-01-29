@@ -1,19 +1,119 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="icon.png">
     <title>QRCode</title>
 </head>
-<body>
-    <h1>Crie seu QRCode</h1>
-    <textarea maxlength="256" rows="4"></textarea>
-    <br>
-    <button onclick="GerarQRCode()">Gerar QRCode</button>
-    <br>
-    <img id="QRCodeImage">
-    <script src="./qrcode.js"></script>
 
-</body> 
+<body>
+    <header>
+
+    </header>
+    <main>
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-8 fundo-branco">
+
+                    <h1 class="text-center titulo">Olá crie seu QR code de forma
+                        <span>gratuita</span>
+                    </h1>
+                    <div id="lista-passos">
+                        <ul>
+                            <li>
+                                <span class="span-numero">1°</span> Passo: copie o link desejado;
+                            </li>
+                            <li>
+                                <span class="span-numero">2°</span> Cole na área de texto ao lado (ou abaixo dependendo do despositivo);
+                            </li>
+                            <li>
+                                <span class="span-numero">3°</span> Clique no botão “Gerar QRcode”;
+                            </li>
+                            <li>
+                                <span class="span-numero">4°</span>
+                                Pronto seu Qrcode estar pronto para ser utilizado
+                            </li>
+                        </ul>
+
+                    </div>
+
+                </div>
+
+                <div class="col-md-4">
+                    <div id="case-qrcode" class="w-100">
+                        <textarea maxlength="256" placeholder="Insira o link" class="w-100 mb-5"></textarea>
+                        <img id="QRCodeImage" class="w-100">
+                        <button onclick="GerarQRCode()" id="btn-gerar-qrcode" class="cor-secundaria mt-2">Gerar
+                            QRCode</button>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-4">
+                    <div id="links-auxilares">
+                        <ul>
+                            <li>link do canal: <br>
+                                <a href="https://www.youtube.com/@joaotinti5293" target="_blank">Crédito ao canal que desenvolveu o código</a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/joaotinti75" target="_blank">Github do desenvolvedor do código</a>
+                            </li>
+                            <li>
+                                <a href="https://developers.google.com/chart/infographics/docs/qr_codes?hl=en" target="_blank">API do google</a>
+                            </li>
+                            <li>Meu
+                                <a href="https://github.com/vv1ll14n" target="_blank">Github</a>
+                            </li>
+                            <li>Meu
+                                <a href="https://vv1ll14n.github.io/linktree/" target="_blank">Linktree</a>
+                            </li>
+                            <li>
+                                <a href="https://pt.wikipedia.org/wiki/C%C3%B3digo_QR" target="_blank">O que é QRcode?</a>
+                            </li>
+
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="text-center mt-5">
+                        <h6>Criado por Willian Oliveira</h6>
+                        <p>Todos direitos reservados &copy; 2023</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <p class="text-center mt-5">Obrigado pela visita espero que tenha gostado.</p>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="./qrcode.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+</body>
+
+
+
 </html>

@@ -1,0 +1,98 @@
+body{
+    height: 500px;
+    background-color:#3D348B;
+    overflow-x: hidden;
+    font-size: 1em;
+}
+.cor-primaria{
+    background-color: #3D348B;
+}
+.cor-secundaria{
+    background-color: #F7B801;
+}
+.fundo-branco{
+    background-color: white;
+    box-shadow: 1px 1px 1px rgb(0, 0, 0);
+}
+/**/
+.titulo{
+    font-size: 5em;
+    text-transform: uppercase;
+}
+span{
+    color: #F7B801;
+}
+.span-numero{
+    font-size: 3em;
+}
+
+#lista-passos{
+    margin: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#lista-passos ul{
+    list-style: none;
+}
+
+
+
+/**/
+#case-qrcode{
+    height: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /*border: 1px solid black;*/
+    margin: 0 auto;
+}
+
+textarea{
+    border: 1px solid black;
+    border-radius: 20px;
+}
+textarea::placeholder{
+    text-align: center;
+    padding: 10px;
+}
+
+
+#btn-gerar-qrcode{
+    margin: 1%;
+    width: 150px;
+    height: 50px;
+    color: white;
+    border-radius: 25px;
+    border: 1px solid #F7B801;
+}
+
+#btn-gerar-qrcode:hover{
+    width: 300px;
+}
+
+/**/
+footer{
+    color: white;
+    font-size: 0.8em;
+}
+#links-auxilares ul{
+    list-style: none;
+    padding: 0;
+}
+#links-auxilares a{
+    color: white;
+}
+#links-auxilares a:hover{
+    color: #F7B801;
+}
+
+
+/**/
+@media (max-width: 575.98px) { 
+    .titulo{
+        font-size: 4em;
+    }
+ }
